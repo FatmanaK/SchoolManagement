@@ -5,6 +5,8 @@ import school.definitions.JunHiStudent;
 import school.definitions.JuniorHighData;
 import school.utilities.Utilities;
 
+import static school.utilities.Utilities.*;
+
 
 public class JunHiTests extends JunHiStudent {
 
@@ -20,8 +22,9 @@ public class JunHiTests extends JunHiStudent {
         p.toString();
 
 
-        System.out.println( Utilities.getStudentsWhile(getJunHiStudentList()));
+        System.out.println( getStudentsWhile(getJunHiStudentList()));
 
+       // getPersonLambda(studentJ1);
 
 
     }

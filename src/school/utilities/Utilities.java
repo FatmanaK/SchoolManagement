@@ -160,7 +160,6 @@ public class Utilities extends PERSON {
     }
 
     /**
-     *
      * @param person objects stored in SUPERKEY ARRAY in GenericUtils class
      * @param <T> optional
      */
@@ -182,8 +181,20 @@ public class Utilities extends PERSON {
         System.out.println("END");
     }
 
+    // for individual superkeys: FIX type List<T> person
+    public static <T> void getPersonLambda(SUPERKEY[]person)
+    {
+        Stream<SUPERKEY> stream = Stream.of(person);
+        stream.forEach(p -> System.out.println(p.getKey() + "\n" +
+                p.getValue()));
+    }
 
-
+    public static <T> void getPersonLambda2(List<PERSON> person)
+    {
+        person.forEach(System.out::println);
+        //shorter way to write the code above
+       // person.forEach(p -> System.out.println(p));
+    }
 
 
     public static String getStudentsWhile(List<Student> student)

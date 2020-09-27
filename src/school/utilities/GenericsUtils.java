@@ -32,10 +32,12 @@ public class GenericsUtils {
 
      //   System.out.println(staticsuperkeys.toString()); fix the bug
          // print all keys and values using stream method
-          Utilities.getPersonStream(superkeys); // make sure method accepts SUPERKEY[]
+       //   Utilities.getPersonStream(superkeys); // make sure method accepts SUPERKEY[]
 
+        Utilities.getPersonLambda(superkeys);
+
+       // Utilities.getPersonLambda(superkey1);
     }
-
 
     public static <K,V> void toString(K key, V value){
         System.out.println("\nKey: " + key + "\n" +
