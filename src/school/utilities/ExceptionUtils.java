@@ -13,7 +13,7 @@ public class ExceptionUtils {
     /*
             Exception is what is broken in the code:
             Compile time, Run Time Exception
-            Checked vs Unchecked exceptions
+
 
             How we take care of exceptions?
             Handle(try) or declare(method signature: throws)
@@ -21,6 +21,17 @@ public class ExceptionUtils {
             - Display a simple message why this exception occurred.
 
             Declare with throws keyword
+
+            Checked vs Unchecked exceptions
+
+            Checked exception: throws keyword
+
+            Unchecked exceptions: try block
+
+            in java examples of checked exceptions?
+            in java examples of unchecked exceptions?
+
+
 
      */
 
@@ -105,6 +116,28 @@ public class ExceptionUtils {
           //  e.printStackTrace();
         }
 
+    }
+
+    public static void generateExceptionFinallyBlock()
+    {
+        try
+        {
+            throw new IOException();
+        }
+        catch (IOException e)
+        {
+            System.out.println(e.getMessage());// returns null
+            //e.printStackTrace();
+        }
+        catch (NullPointerException e)
+        {
+            e.getMessage();
+        }
+        finally
+        { // to be executed at the end
+            System.out.println("Finally block executed: ");
+            generateArrayOutOfBounds(6); // direct user to another service
+        }
     }
 
 }

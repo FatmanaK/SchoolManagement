@@ -1,7 +1,5 @@
 package school.tests;
 
-import school.utilities.ExceptionUtils;
-
 import java.io.IOException;
 
 import static school.utilities.ExceptionUtils.*;
@@ -20,7 +18,9 @@ public class ExceptionTests {
 
       //  generateArrayOutOfBounds(4);
 
-        generateInputMismatch();
+      //  generateInputMismatch();
+
+        generateExceptionFinallyBlock();
     }
 }
 
