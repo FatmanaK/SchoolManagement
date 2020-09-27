@@ -23,6 +23,7 @@ public class GenericsUtils {
         SUPERKEY<Integer, String> superkey2 = new SubSuper<>(2, "BMW");
         SUPERKEY<Integer, String> superkey3 = new SubSuper<>(3, "Ford 150");
 
+        // Individually print superkeys
         toString(superkey1.getKey(), superkey1.getValue());
         toString(superkey2.getKey(), superkey2.getValue());
         toString(superkey3.getKey(), superkey3.getValue());
@@ -30,6 +31,7 @@ public class GenericsUtils {
         SUPERKEY[] superkeys = {superkey1, superkey2, superkey3};
 
      //   System.out.println(staticsuperkeys.toString()); fix the bug
+         // print all keys and values using stream method
           Utilities.getPersonStream(superkeys); // make sure method accepts SUPERKEY[]
 
     }
