@@ -5,6 +5,7 @@ import school.definitions.*;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static school.business.university.MAX_SIZE;
 import static school.definitions.JunHiStudent.getJunHiStudentList;
@@ -151,7 +152,6 @@ public class Utilities extends PERSON {
     public static <T> void getPersonIterator(List<T> person)
     {
         // generic for each that works for student or teacher types
-
         Iterator<T> iterator = person.iterator();
         while (iterator.hasNext())
         {
@@ -159,7 +159,28 @@ public class Utilities extends PERSON {
         }
     }
 
+    /**
+     *
+     * @param person objects stored in SUPERKEY ARRAY in GenericUtils class
+     * @param <T> optional
+     */
+    public static <T> void getPersonStream(SUPERKEY[]person)
+    {
+        System.out.println("START");
+        // generic stream that works with SUPERKEY objects
+        // converted person into stream obj
+        Stream<SUPERKEY> stream = Stream.of(person);
 
+        stream.forEach(superkey ->
+            System.out.println("\n" + superkey.getKey() +
+                                " " + superkey.getValue()));
+
+        /*  stream.forEach(superkey -> {
+        System.out.println("\n" + superkey.getKey() +
+                " " + superkey.getValue()); }); */
+
+        System.out.println("END");
+    }
 
 
 

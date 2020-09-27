@@ -30,7 +30,8 @@ public class GenericsUtils {
         SUPERKEY[] superkeys = {superkey1, superkey2, superkey3};
 
      //   System.out.println(staticsuperkeys.toString()); fix the bug
-       // Utilities.getPersonIterator(superkeys);
+          Utilities.getPersonStream(superkeys); // make sure method accepts SUPERKEY[]
+
     }
 
 
@@ -57,13 +58,19 @@ public class GenericsUtils {
 // Create a concrete class that implements the interface
 class SubSuper<K, V> implements SUPERKEY<K, V>{
 
+    // assume it's like private final String key;
     private final K key;
+
+    // assume it's like private final Integer value;
     private final V value;
 
     public SubSuper(K key, V value){
         this.key = key;
         this.value = value;
     }
+
+
+
 
     @Override
     public K getKey() {
