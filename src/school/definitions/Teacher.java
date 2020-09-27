@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class Teacher extends PERSON {           // RETURN AT 3:05 CENTRAL
 
+
     private static ArrayList<Teacher> teachers = new ArrayList<>();
 
     // getter for private list above

@@ -24,6 +24,7 @@ public class MidhighData extends PERSON implements middle_high {
     @Override
     public void removePerson(PERSON p) {
 
+
     }
 
     @Override

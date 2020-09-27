@@ -9,8 +9,10 @@ import static school.utilities.Utilities.addPerson;
 public class UniStudent extends Student {
     // power of encapsulation: OOP= getter and setter
     private static ArrayList<Student> uniStudentList = new ArrayList<>();
+
     public UniStudent(String name, int age, int grade) {
        super(name, age, grade);
+
 
     }
     public static ArrayList<Student> getUniStudentList(){

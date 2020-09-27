@@ -15,6 +15,7 @@ public class MidHiStudent extends Student {
         super(name, age, grade);
     }
 
+
     public MidHiStudent() { }
 
     public static List<Student> getMidHiStudentList(){

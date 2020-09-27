@@ -5,6 +5,7 @@ import school.business.junior_high;
 
 import java.util.Scanner;
 
+
 public  class JuniorHighData extends PERSON  implements junior_high {
 
     @Override
@@ -14,6 +15,7 @@ public  class JuniorHighData extends PERSON  implements junior_high {
 
     @Override
     public void teachBranch() {
+
 
     }
 

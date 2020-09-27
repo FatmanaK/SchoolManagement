@@ -17,9 +17,11 @@ public class TeacherTests extends Teacher{
 
         //System.out.println(getTeacherList().toString());
 
+
       //  Utilities.getPersonForEach(Teacher.getTeacherList());
 
         Utilities.getPersonIterator(Teacher.getTeacherList());
+
 
 
 

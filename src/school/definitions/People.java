@@ -5,6 +5,7 @@ import school.utilities.Utilities;
 
 public class People extends PERSON {
 
+
     // Founders
     public   static PERSON teacher1 = new PERSON("John Bernard", "CS-Algorithms");
     public  static   PERSON teacher2 = new PERSON("Tom Toon", "Data Structures");
