@@ -5,6 +5,7 @@ import school.definitions.JunHiStudent;
 import school.definitions.JuniorHighData;
 import school.utilities.Utilities;
 
+
 public class JunHiTests extends JunHiStudent {
 
     public JunHiTests(String name, int age, int grade) {

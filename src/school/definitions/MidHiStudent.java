@@ -10,7 +10,6 @@ import static school.utilities.Utilities.addPerson;
 public class MidHiStudent extends Student {
     private static ArrayList<Student> midHiStudentList = new ArrayList<>();
 
-
     public MidHiStudent(String name, int age, int grade) {
         super(name, age, grade);
     }

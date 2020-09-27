@@ -30,7 +30,6 @@ public class GenericsUtils {
         SUPERKEY[] superkeys = {superkey1, superkey2, superkey3};
 
      //   System.out.println(staticsuperkeys.toString()); fix the bug
-
        // Utilities.getPersonIterator(superkeys);
     }
 

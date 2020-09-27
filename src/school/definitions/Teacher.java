@@ -4,8 +4,8 @@ import school.business.PERSON;
 import static school.utilities.Utilities.addPerson;
 import java.util.ArrayList;
 
-public class Teacher extends PERSON {           // RETURN AT 3:05 CENTRAL
 
+public class Teacher extends PERSON {           // RETURN AT 3:05 CENTRAL
 
     private static ArrayList<Teacher> teachers = new ArrayList<>();
 

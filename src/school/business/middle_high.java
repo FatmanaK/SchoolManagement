@@ -6,5 +6,4 @@ public interface middle_high extends university { // so middle_high can inherit 
 
 
 
-
 }

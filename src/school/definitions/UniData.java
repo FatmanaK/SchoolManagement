@@ -6,7 +6,6 @@ import school.utilities.Utilities;
 
 import java.util.Scanner;
 
-
 public class UniData extends PERSON implements university {
     PERSON a = new UniData();
 

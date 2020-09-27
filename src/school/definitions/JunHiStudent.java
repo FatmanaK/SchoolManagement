@@ -14,7 +14,6 @@ public class JunHiStudent extends Student {
     public JunHiStudent(String name, int age, int grade) {
         super(name, age, grade);
 
-
     }
 
     // getter for private list above

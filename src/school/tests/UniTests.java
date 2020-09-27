@@ -44,7 +44,6 @@ public class UniTests {
         System.out.println(People.teacher7.getName() + "s salary: " +
                 calculateSalary(People.teacher7));
 
-
         // change what teacher 13 is teaching
         People.teacher13.setSubjectTeach("Selenium 4");
         // print what teacher 13 is teaching currently

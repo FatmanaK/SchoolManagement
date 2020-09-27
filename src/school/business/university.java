@@ -14,7 +14,6 @@ public interface university
     // subject teaching
     void  teachSubject();
 
-
     // brach of the teachers
     void teachBranch();
 
